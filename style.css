@@ -1,0 +1,117 @@
+:root {
+    --theme-black: #000000;
+    --theme-red: #d00000;
+    --theme-yellow: #ffba08;
+    --theme-blue: #032b43;
+    --theme-green: #136f63;
+    --theme-white: #EEF0EB;
+    --theme-grey: #131316;
+    --theme-title: 'VT323', monospace;
+    --theme-copy: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: var(--theme-green);
+    margin: 0;
+    font-family: var(--theme-copy);
+}
+
+main {
+    margin: 20px;
+}
+
+h1 {
+    color: var(--theme-white);
+    background-color: var(--theme-black);
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-family: var(--theme-title);
+    font-size: 3em;
+}
+
+h2, h3, h4 {
+    color: var(--theme-yellow);
+    background-color: var(--theme-grey);
+    font-family: var(--theme-title);
+    font-size: 2em;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0;
+    padding: 10px;
+}
+
+p {
+    color: var(--theme-black);
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    font-size: 1.25em;
+}
+
+div {
+    background-color: var(--theme-white);
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+ul {
+    text-align: left;
+    font-size: 1.25em;
+}
+
+span {
+    color: var(--theme-red);
+}
+
+table {
+    width: 30%;
+    padding: 15px;
+    margin: auto
+}
+
+th {
+    color: var(--theme-yellow);
+    font-size: 1.5em;
+}
+
+td {
+    background-color: var(--theme-grey);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+td:nth-child(even) {
+    text-align: center;
+    color: var(--theme-blue);
+    width: 5%;
+    font-size: 2em;
+}
+
+td:nth-child(odd) {
+    color: var(--theme-white);
+    font-size: 1.5em;
+    text-align: left;
+}
+
+td:nth-child(odd):hover {
+    animation: shake 75ms infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0.5deg);
+    }
+    50% {
+        transform: rotate(-0.5deg);
+    }
+    100% {
+        transform: rotate(0.5deg);
+    }
+}
+
+td a {
+    color: var(--theme-white);
+}
