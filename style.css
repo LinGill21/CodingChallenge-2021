@@ -9,6 +9,10 @@
     --theme-title: 'VT323', monospace;
     --theme-copy: 'Ubuntu', sans-serif;
 }
+img{
+    margin-left:10%; 
+    margin-right:10%;
+}
 
 body {
     background-color: var(--theme-green);
